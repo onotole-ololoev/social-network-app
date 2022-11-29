@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  background: gray;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: darkgray;
+  display: flex;
+
+  border: 1px solid black;
 }
 
 
