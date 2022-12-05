@@ -9,5 +9,8 @@
   display: flex;
   border: 1px solid black;
 }
+.container-content {
+  width: 100%;
+}
 
 

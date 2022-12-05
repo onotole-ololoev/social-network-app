@@ -5,7 +5,6 @@ import MyPosts from "./myPosts/myPosts";
 const Profile = () => {
     return (
         <div className={s.content}>
-            Profile
             <div>
                 <img src="#" alt="wallpaper profile"/>
             </div>
