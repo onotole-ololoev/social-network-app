@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from "./components/header/header";
 import Nav from "./components/nav/nav";
-import Content from "./components/content/content";
+import Profile from "./components/profile/profile";
 
 function App() {
     return (
@@ -10,7 +10,7 @@ function App() {
             <Header/>
             <div className="container">
                 <Nav/>
-                <Content/>
+                <Profile/>
             </div>
         </div>
     );
