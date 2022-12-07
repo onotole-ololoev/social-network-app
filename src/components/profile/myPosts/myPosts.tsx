@@ -1,12 +1,14 @@
 import React from 'react';
+import s from './myPosts.module.css'
 import Post from "./post/post";
 
 const MyPosts = () => {
     return (
-        <div>
-            <div>
+        <div className={s.wrapper}>
+            <h3>My posts</h3>
+            <div className={s.new_post__block}>
                 <div>
-                    <textarea></textarea>
+                    <textarea className={s.new_post__block__textarea}></textarea>
                 </div>
                 <button>add post</button>
             </div>

@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 10px;
+}
+.new_post__block {
+    padding-bottom: 10px;
+}
+.new_post__block__textarea {
+    width: 50%;
+    min-height: 20px;
+}

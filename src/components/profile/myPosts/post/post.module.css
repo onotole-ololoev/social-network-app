@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(108, 108, 110, 0.32);
+    margin-bottom: 10px;
+
+}
+.post_block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.post_avatar {
+    border-radius: 50%;
+}
+.post_text {
+    padding-left: 10px;
+}
+.post_like {
+
+}
