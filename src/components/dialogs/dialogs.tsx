@@ -4,19 +4,27 @@ import UserDialog from "./userDialog/userDialog";
 import MessageItem from "./messageItem/messageItem";
 
 const Dialogs = () => {
+
+    let userDialogData = [
+        {id: 1, name: "Oleg"},
+        {id: 2, name: "Viktor"},
+        {id: 3, name: "Onotole"}
+    ]
+    let messageItemData = [
+        {id: 1, message: "What is your name???"},
+        {id: 2, message: "What  name???"},
+        {id: 3, message: "What is your /////////"},
+        {id: 4, message: "some some  name???"},
+        {id: 5, message: "..........your name???"},
+    ]
+
     return (
         <div className={s.content}>
             <div className={s.users_block}>
-                <UserDialog name={'name1'} id={'1'}/>
-                <UserDialog name={'name2'} id={'2'}/>
-                <UserDialog name={'name3'} id={'3'}/>
-                <UserDialog name={'name4'} id={'4'}/>
+                {userDialogData.map(el => <UserDialog name={el.name} id={el.id} key={el.id}/>)}
             </div>
             <div className={s.messages_block}>
-                <MessageItem message={'Yo!!!!'} />
-                <MessageItem message={'Yo bro!!!!'} />
-                <MessageItem message={'What is your name???'} />
-                <MessageItem message={'!!!!'} />
+                {messageItemData.map(el => <MessageItem message={el.message} key={el.id}/>)}
             </div>
         </div>
     );

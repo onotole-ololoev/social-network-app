@@ -5,7 +5,7 @@ export type PostType = {
 
 export type UserDialogType = {
     name: string
-    id: string
+    id: number
 }
 
 export type MessageItemType = {
