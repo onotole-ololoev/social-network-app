@@ -5,8 +5,9 @@ import Nav from "./components/nav/nav";
 import Profile from "./components/profile/profile";
 import Dialogs from "./components/dialogs/dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {StateType} from "./types/types";
 
-function App() {
+function App(props: StateType) {
     return (
         <BrowserRouter>
             <div className="App">
@@ -15,8 +16,8 @@ function App() {
                     <Nav/>
                     <div className='container-content'>
                         <Routes>
-                            <Route path={'/profile'} element={<Profile/>}/>
-                            <Route path={'/dialogs'} element={<Dialogs/>}/>
+                            <Route path={'/profile'} element={<Profile profilePage={props.profilePage}/>}/>
+                            <Route path={'/dialogs'} element={<Dialogs dialogsPage={props.dialogsPage}/>}/>
                         </Routes>
                     </div>
                 </div>
