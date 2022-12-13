@@ -28,4 +28,6 @@ export type MessageItemType = {
     message: string
 }
 
+export type RefTextareaType = HTMLTextAreaElement | undefined | null
+
 
