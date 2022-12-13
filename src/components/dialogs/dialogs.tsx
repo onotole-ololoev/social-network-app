@@ -19,6 +19,13 @@ const Dialogs = (props: DialogsPageType) => {
     //     {id: 5, message: "..........your name???"},
     // ]
 
+    let textarea = React.createRef<HTMLTextAreaElement>()
+
+    let sendMessage = () => {
+        let text = textarea.current?.value
+        alert(text)
+    }
+
     return (
         <div className={s.content}>
             <div className={s.users_block}>
@@ -26,6 +33,11 @@ const Dialogs = (props: DialogsPageType) => {
             </div>
             <div className={s.messages_block}>
                 {props.messageItemData.map(el => <MessageItem id={el.id} message={el.message} key={el.id}/>)}
+                <div>
+                    <textarea ref={textarea} className={s.textarea}></textarea>
+                    <br/>
+                    <button onClick={sendMessage}>send message</button>
+                </div>
             </div>
         </div>
     );
